@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Durbhas Yantra is a E-commerce website where customers can buy latest mobile phones,pre-order latest mobile..">
+    <meta name="keywords" content="New brand phones,buy mobile phones,pre-order">
+    <meta name="author" content="Prasant Kr Singh">
+    <meta name="refresh" content="5">
+	<title>Durbhas Yantra</title>
+    <!--Internal css-->
+    <style>
+       
+        .OurServicesPadding
+        {
+            padding-top:45px;
+        }
+        .section3
+        {
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            flex-wrap:wrap;
+            margin-top:8vh;
+            margin-left:1vw;/* space between left screen and shipping box*/
+        }
+        .section4
+        {
+            margin-top:39px;
+        }
+    </style>
+    <!--External css i.e style.css for style the page-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/imageSlider.css">
+    <link rel="stylesheet" type="text/css" href="css/section.css">
+    <link rel="stylesheet" type="text/css" href="css/section2.css">
+    <link rel="stylesheet" type="text/css" href="css/section3.css">
+    <link rel="stylesheet" type="text/css" href="css/section4.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+   
+</head>
+<body>
+    <!--class header which set the navbar height width and backgrond-color and the div tags 
+    inside the header class should also display:flex-->
+    <nav class="header">
+        <!--logoContainer set the size of Durbhas Yantra logo-->
+        <div class="logoContainer">
+            <!--Logo of Durbhas Yantra-->
+            <a href="#"><img src="Images/logo.jpeg" alt="Durbhas Yantra Logo" class="logo"></a>
+        </div>
+        <div class="navbar_lists">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Product.html">Product</a></li>
+            <li><a href="Blog.html">Bolg</a></li>
+            <li><a href="Research.html">Research</li>
+            <li><a href="Contact_us.html">Contact Us</a></li>
+        </div>
+        <!--Search button-->
+        <!-- <div class="search">
+            Search:<input type="text" name="search">
+        </div> -->
+    </nav>
+    <!--this div is for auto image slider-->
+    <div class="slider">
+        <!--marquee class show slides of entered text-->
+        <div class="marquee">
+            <marquee style="font-size:3vh;color: rgb(210, 210, 210);text-align:center;">
+            <p>&#128512 &#128512 Thank you for visiting our website.Get the latest phone from here</p>
+            </marquee>
+        </div>
+        <div class="slideImage">
+            <img src="Mobile1.jpg" alt="Mobile1 Photo" class="Image" id="Mobile1">
+        </div>
+    
+    </div>
+    <!--End of silder images-->
+    <!--Start of Section1-->
+    <div class="section1">
+        <!--This leftSection for creating box in left side of section1-->
+        <section class="leftSection1">
+            <div class="leftSectionText">
+                <!--changing the font-style of h5-->
+            <h5 style="font-style: italic;">Enjoy Mobile phone services here...</h5>
+            <h2>Deal with best..</h2>
+            <!--Changing the font-style of h1-->
+            <h1 style=" color:green;font-family: italic;">Save more with coupones & upto 40% off.</h1>
+            <a href="Product.html" target="_parent"><button> Shop Now</button></a>
+            </div>
+        </section>
+        <!--End of leftSection-->
+        <!--This rightSection ofr creating box in right side of section1-->
+        <section class="rightSection1">
+            <img src="Images/Iphone13promax.png" alt="Iphone 13 pro max" class="rightSectionImage">
+        </section>
+        <!--End of rightSection-->
+    </div>
+    <!--Start of Section2-->
+    <div class="section2">
+        <!--This leftSection2 for creating box in left side of section2-->
+        <div class="leftSection2">
+            <img src="Images/galaxynote20.png" alt="Galaxy Note 20" class="rightSectonImage2">
+        </div>
+        <!--End of leftSection2-->
+        <!--This rightSection2 for creating box in right sideof section2-->
+        <div class="rightSection2">
+            <h3 style="font-family:cursive;">Samsung Galaxy Note 20 now available for purchase in Nepal 
+                with 1 year breakage insurance..
+            </h3>
+            <br>
+            <h3>Rs
+                <span style="text-decoration: line-through;">
+                    109,999
+                </span>
+            </h3>
+            <br>
+            <h3>Rs:105,999
+            </h3>
+        </div>
+        <!--End of rightSection2-->
+    </div>
+    <br>
+    <hr style="color:black">
+    <h1 class="OurServicesPadding" style="font-size:4vh; text-align: center; color:rgb(173, 255, 228)">
+        ...OUR SERVICES....
+    </h1>
+    <!--Start of section 3-->
+    <section class="section3">
+        <div class="featureBox">
+            <img src="Images/freeShiping.png" alt="Free Shipping">
+            <h5>Free Shipping</h5>
+        </div>
+        <div class="featureBox">
+            <img src="Images/24hoursOpen.png" alt="24 Hours Open">
+            <h5>24x7 support</h5>
+        </div>
+        <div class="featureBox">
+            <img src="Images/OnlineOrder.png" alt="Order Online">
+            <h5>Online Order Available</h5>
+        </div>
+        <div class="featureBox">
+            <img src="Images/SpecialOffer.png" alt="Special Offer">
+            <h5>Get Exclusive Offer</h5>
+        </div>
+    </section>
+    <!--End of section 3-->
+    <!--Start of section 4-->
+    <section class="section4">
+        <div class="text">
+            <h2>Sign Up for latest update</h2><br>
+            <h4>Get E-mail updates about our latest shop and <span style="color:yellow">Special offers.</span></h4>
+        </div>
+        <!--Sign up section where user sign up with e-mail id..-->
+        <div class="email">
+            <form name="emailForm" action="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" onsubmit="validateForm()">
+                <span style="color:rgb(186, 184, 184);font-size:19px;">Email:</span>:
+                <input class="EmailBox" type="email" name="email" placeholder="Example@gmail.com">
+                <input type="submit" value="Sign Up">
+            </form>
+        </div>
+    </section>
+    <!--This is the last section i.e footer-->
+    <footer class="footer">
+        <div class="footerlogo">
+            <a href="#"><img src="Images/logo.jpeg" alt="Durbhas Yantra Logo"></a>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2022 DurbhasYantra.com</p>
+        </div>
+        <div class="fbiLogo">
+            <a href="https://www.facebook.com/prashantsyngh1/"><img src="Images/fb.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/prashant_syngh/?hl=en"><img src="Images/instagram.png" alt="instagram"></a>
+        </div>
+    </footer>
+    <!--End of footer-->
+    <!--Adding external javascript for sliding the images in home page-->
+    <script src="js/ImageSlider.js"></script>
+    <script>
+        
+    
+    
+
+       //Scripting the form to be valid
+       //calling the function validateForm()
+       function validateForm()
+       {
+           var x=document.forms["emailForm"]["email"].value;
+           if(x==" ")
+           {
+               alert(" email address..");
+           }
+           else
+           {
+               alert("Thank you")
+           }
+       }
+    </script>
+
+</body>
+</html>

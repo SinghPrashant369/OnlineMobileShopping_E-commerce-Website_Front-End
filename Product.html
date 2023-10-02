@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Durbhas Yantra is a E-commerce website where customers can buy latest mobile phones,pre-order latest mobile..">
+    <meta name="keywords" content="New brand phones,buy mobile phones,pre-order">
+    <meta name="author" content="Prasant Kr Singh">
+    <meta name="refresh" content="5">
+	<title>Durbhas Yantra</title>
+    <!--Internal css-->
+    <!--External css i.e style.css for style the page-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <!--Review Star icon Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Shooping cart library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    
+
+        body{
+            background-color: rgb(0, 0, 0);
+            height:100vh;
+        }
+        /*set the first image i.e background image size*/
+        .firstimage
+        {
+            width:93%;
+            height:70vh;
+            margin:auto auto;
+            background-image: url("Images/ProductFirstImage.jpg");
+            background-size:cover;
+        }
+        /*set the size of products container*/
+        .products
+        {
+            width:100vw;
+            background-color:rgb(0, 0, 0);
+        }
+        /*set the size of product contianer so that the items can adjust in it*/
+        .items
+        {
+        width:23%;
+        height:465px;
+        min-width:250px;
+        margin:15px; /*margin top right bottom left :15px*/
+        border-radius:10px;
+        background-color: rgb(133, 133, 133);
+        cursor: pointer;
+        }
+        /*set the image in items container so that the images will fit in the box items*/
+        .items img{
+            width:98%;
+            height:75%;
+            background-color:rgb(133, 133, 133);
+        }
+        /*move the description of items box in the center*/
+        .description
+        {
+            text-align:center;
+        }
+        /*Set the color of of star icon to orange*/
+        .checked
+        {
+            color: orange;
+        }
+        /*Effect of items after moving cursor towards the  products*/
+        .items img:hover
+        {
+            width:100%;
+
+        }
+        .productContainer
+        {
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            flex-wrap:wrap;
+        }
+    </style>
+</head>
+<body>
+    <!--class header which set the navbar height width and backgrond-color and the div tags 
+    inside the header class should also display:flex-->
+    <nav class="header">
+        <!--logoContainer set the size of Durbhas Yantra logo-->
+        <div class="logoContainer">
+            <!--Logo of Durbhas Yantra-->
+            <a href="#"><img src="Images/logo.jpeg" alt="Durbhas Yantra Logo" class="logo"></a>
+        </div>
+        <div class="navbar_lists">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Product.html">Product</a></li>
+            <li><a href="Blog.html">Bolg</a></li>
+            <li><a href="Research.html">Research</li>
+            <li><a href="Contact_us.html">Contact Us</a></li>
+        </div>
+        <!--Search button-->
+        <!-- <div class="search">
+            Search:<input type="text" name="search">
+        </div> -->
+    </nav>
+    <!--This is the background image after nav bars in product page-->
+    <div class="firstimage">
+        <br>
+        <br>
+        <h1 style="font-family:cursive;color:rgb(147, 147, 147)">
+            Best Smartphone in Nepal
+        </h1>
+        <br>
+        <h1 style="color:rgb(28, 79, 28);padding-left:50px;">
+            Making communicatoin easier..
+        </h1>
+        <br>
+    </div>
+    <!--End of class firstimage-->
+    <!--This div is for the items i.e products items-->
+    <h1 style="text-align:center; margin-top:10vh;color:rgb(68, 231, 246);">Availabe Products</h1>
+    <h2 style="text-align: center;color:rgb(175, 105, 105); margin-bottom: 8.5vh;padding:10px ;">
+        Grab it before it's gone.
+    </h2>
+    <section class="products">
+        <!--This container holds all the product -->
+        <div class="productContainer">
+            <!--This container is for first item-->
+            <div class="items">
+                <img src="Images/Product1.png" alt="Iphone 13 pro max">
+                <!--This is the container for description-->
+                <div class="description"> 
+                        <span>Apple</span>
+                        <h5>Iphone 13 pro max</h5>
+                        <span>Rating:</span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span> 
+                        <span class="fa fa-star"></span> 
+                        <h4>Rs:185000</h4>
+                </div>
+                <i onclick="Change1()" id="addtocart1" class=" cart fa fa-shopping-cart" style="font-size:35px;color:rgb(201, 190, 190)"></i>
+            </div>
+            <!--second item-->
+            <div class="items">
+                <img src="Images/Product2.png" alt="OnePlus 10 pro">
+                <!--This is the container for description-->
+                <div class="description"> 
+                        <span>OnePlus</span>
+                        <h5>OnePlus 10 pro</h5>
+                        <span>Rating:</span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span> 
+                        <span class="fa fa-star checked"></span> 
+                        <h4>Rs:134,999</h4>
+                </div>
+                <i onclick="Change2()" id="addtocart2" class=" cart fa fa-shopping-cart" style="font-size:35px;color:rgb(201, 190, 190)"></i>
+            </div>
+            <!--Third item-->
+            <div class="items">
+                <img src="Images/Product3.png" alt="Galaxy s22 Ultra">
+                <!--This is the container for description-->
+                <div class="description"> 
+                        <span>Samsung</span>
+                        <h5>Samsung Galaxy S22 Ultra</h5>
+                        <span>Rating:</span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span> 
+                        <span class="fa fa-star"></span> 
+                        <h4>Rs:159,999</h4>
+                </div>
+                <i onclick="Change3()" id="addtocart3" class=" cart fa fa-shopping-cart" style="font-size:35px;color:rgb(201, 190, 190)"></i>
+            </div>
+            <!--Fourth item-->
+            <div class="items">
+                <img src="Images/Product4.png" alt="Iphone 12 pro">
+                <!--This is the container for description-->
+                <div class="description"> 
+                        <span>Apple</span>
+                        <h5>Iphone 12 pro</h5>
+                        <span>Rating:</span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span> 
+                        <span class="fa fa-star"></span> 
+                        <h4>Rs:168,999</h4>
+                </div>
+                <i onclick="Change4()" id="addtocart4" class=" cart fa fa-shopping-cart" style="font-size:35px;color:rgb(201, 190, 190)"></i>
+            </div>
+            <!--Fifth item-->
+            <div class="items">
+                <img src="Images/Product5.png" alt="OnePlus 9 Pro">
+                <!--This is the container for description-->
+                <div class="description"> 
+                        <span>OnePlus</span>
+                        <h5>OnePlus 9 pro</h5>
+                        <span>Rating:</span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span> 
+                        <span class="fa fa-star"></span> 
+                        <h4>Rs:119,990</h4>
+                </div>
+                <i onclick="Change5()" id="addtocart5" class=" cart fa fa-shopping-cart" style="font-size:35px;color:rgb(201, 190, 190)"></i>
+            </div>
+            <!--Sixth item-->
+            <div class="items">
+                <img src="Images/Product6.png" alt="Realme 8 pro">
+                <!--This is the container for description-->
+                <div class="description"> 
+                        <span>Realme</span>
+                        <h5>Realme 8 Pro</h5>
+                        <span>Rating:</span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span> 
+                        <span class="fa fa-star"></span> 
+                        <h4>Rs:36,000</h4>
+                </div>
+                <i onclick="Change6()" id="addtocart6" class=" cart fa fa-shopping-cart" style="font-size:35px;color:rgb(201, 190, 190)"></i>
+            </div>
+            
+    </section>
+       
+    <!--Start of footer..-->
+    <footer class="footer" style="border-top:0.9px solid rgb(73, 72, 72);background-color:rgb(30, 32, 34);">
+        <div class="footerlogo">
+            <a href="#"><img src="Images/logo.jpeg" alt="Durbhas Yantra Logo"></a>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2022 DurbhasYantra.com</p>
+        </div>
+        <div class="fbiLogo">
+            <a href="https://www.facebook.com/prashantsyngh1/"><img src="Images/fb.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/prashant_syngh/?hl=en"><img src="Images/instagram.png" alt="instagram"></a>
+        </div>
+    </footer>
+    <!--End of footer-->
+    <script>
+
+function Change1()
+{
+    document.getElementById("addtocart1").style.color="red";
+    alert("Added to cart");
+
+}
+function Change2()
+{
+    document.getElementById("addtocart2").style.color="red";
+    alert("Added to cart");
+}
+function Change3()
+{
+    document.getElementById("addtocart3").style.color="red";
+    alert("Added to cart");
+
+}
+function Change4()
+{
+    document.getElementById("addtocart4").style.color="red";
+    alert("Added to cart");
+}
+function Change5()
+{
+    document.getElementById("addtocart5").style.color="red";
+    alert("Added to cart");
+}
+function Change6() 
+{
+    document.getElementById("addtocart6").style.color="red";
+    
+}
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Durbhas Yantra is a E-commerce website where customers can buy latest mobile phones,pre-order latest mobile..">
+    <meta name="keywords" content="New brand phones,buy mobile phones,pre-order">
+    <meta name="author" content="Prasant Kr Singh">
+    <meta name="refresh" content="5">
+	<title>Durbhas Yantra</title>
+    <!--Internal css-->
+    <style>
+        /*This section 1 act as a container which takes 88 view width and 50 view height*/
+        .C_section1
+        {
+            width:88vw;
+            height:50vh;
+            margin:0px auto 30px auto; /*the container display in the midle*/
+            background-image: url("Images/ContactUs.jpg");
+            background-size:cover;
+            box-shadow:10px 15px 10px rgb(134, 133, 133);
+          
+
+
+        }
+        .C_section1 h1
+        {
+           font-size:45px;
+           margin-left:15vw;
+        }
+        .C_section1 h3
+        {
+            font-size: 25px;
+            margin-left:3vw;
+        }
+        /*set the width and height of secton 2 container*/
+        .C_section2
+        {
+            width:100%;
+            height:30vh;
+            padding-top:50px;
+            padding-left:30%;
+        }
+        /*the heading inside the .contactInfo container appears in center of this container.*/
+        .C_section2 .contactInfo
+        {
+            margin:auto auto;
+           
+        }
+        .C_section3 h1{
+            padding-left: 35px;
+            font-style:oblique;
+        }
+        /*set the width, height and padding of the form box*/
+        .formBox
+        {
+            width:100vw;
+            height:100%;
+            padding-top:3vh;
+            padding-left:5vw;
+            padding-bottom:3vh;
+        }
+        /*set the text size inside the form*/
+        .formBox label{
+            font-size:3vh;
+            color:rgb(25, 30, 30);
+        }
+        .formBox input
+        {
+            border:5px solid rgb(171, 171, 171);
+            border-radius:5px;
+            padding:5px;
+            margin:1vh;
+        }
+    </style>
+    <!--External css i.e style.css for style the page-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css"> 
+   
+</head>
+<body style="background-color:rgb(241, 241, 241);">
+    <!--class header which set the navbar height width and backgrond-color and the div tags 
+    inside the header class should also display:flex-->
+    <nav class="header">
+        <!--logoContainer set the size of Durbhas Yantra logo-->
+        <div class="logoContainer">
+            <!--Logo of Durbhas Yantra-->
+            <a href="#"><img src="Images/logo.jpeg" alt="Durbhas Yantra Logo" class="logo"></a>
+        </div> 
+        <div class="navbar_lists">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Product.html">Product</a></li>
+            <li><a href="Blog.html">Bolg</a></li>
+            <li><a href="Research.html">Research</li>
+            <li><a href="Contact_us.html">Contact Us</a></li>
+        </div>
+    </nav>
+    <!--Start of section 1-->
+     <section class="C_section1">
+        <h1 style="color:rgb(50, 232, 50)"># let's talk</h1>
+        <h3> Leave a message here.</h3>
+        <h3> We love to hear from you.</h3>
+    </section>
+    <!--End of section 1-->
+    <!--Start of section 2-->
+    <!--this section is for contact and local of the store-->
+    <section class="C_section2">
+        <div class="contactInfo">
+            <h1>This is our contact information and location of our store</h1>
+            <ul>
+                <li>Location:23 kamalpokhari, kathmandu,Nepal</li>
+                <li>Email:example@gmail.com</li>
+                <li>Contact:019000,9800000000</li>
+                <li><span style="color:rgb(50, 207, 50)">Open:</span>24x7 hours</li>
+            </ul>
+        </div>
+    </section>
+    <!--Start of section 3 where there is a form box-->
+    <section class="C_section3">
+        <h1>Leave a message in comment section</h1>
+        <h1>We love to hear from you</h1>
+        <!--This is a form section-->
+        <div class="formBox">
+            <form name="myform" method="post"  onsubmit="return feedbackFunction()" >  
+                <label for="user_name">Name:</label><br>
+                <input type="text" id="user_name" name="name"><br/>
+                <label for="address">Address:</label><br>
+                <input type="text" id="address" name="address"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com"><br>
+                <label for="password">Password:</label><br>
+                 <input type="password" id="password" name="password"><br/>  
+                <h4>Gender:</h4>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <label for="feedback">Feedback</label>
+                    <select type="text" name="feedback" id="feedback">
+                        <option>Positive feedback</option>
+                        <option>Negative feedback</option>
+                    </select><br>
+                <label for="comment">Comment bellow here:</label><br>
+                <textarea type="text" cols="48" rows="10" id="comment" name="comment"></textarea><br>
+                <input type="submit" value="submit">  
+            </form> 
+        </div>
+        <!--End of form section-->   
+    </section> 
+    <!--This is the last section i.e footer-->
+    <footer class="footer">
+        <div class="footerlogo">
+            <a href="#"><img src="Images/logo.jpeg" alt="Durbhas Yantra Logo"></a>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2022 DurbhasYantra.com</p>
+        </div>
+        <div class="fbiLogo">
+            <a href="https://www.facebook.com/prashantsyngh1/"><img src="Images/fb.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/prashant_syngh/?hl=en"><img src="Images/instagram.png" alt="instagram"></a>
+        </div>
+    </footer>
+    <!--End of footer-->
+
+    <link rel="javascript" href="js/form.js">
+    <script>
+         function feedbackFunction()
+        {  
+            var name=document.forms.myform.name.value; 
+            var address=document.forms.myform.address.value; 
+            var password=document.forms.myform.password.value;
+            var email=document.forms.myform.email.value;  
+            var gender=document.forms.myform.gender.value;
+            var comment=document.forms.myform.comment.value;
+  
+            if (name==null || name=="")
+            {  
+                alert("Name can't be blank");  
+                return false;  
+            }
+            if(address==null || address=="")
+            {
+                alert("Address can't be empty.");
+                return false;
+            }
+            if(email==null || email=="")
+            {
+                alert("Email must be provided");
+                return false;
+            }
+            if(password.length<6)
+            {  
+                alert("Password must be at least 6 characters long.");  
+                return false;  
+            }  
+            if(comment==null||comment=="")
+            {
+                alert("type some comment.");
+                return false;
+            }
+        } 
+    </script>
+</body>
+</html>
